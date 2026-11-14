@@ -20,12 +20,14 @@
    ============================================================================= */
 
 /* =============================================================================
-   0. FONTS: Manrope, self-hosted. Only 200–600 are shipped, so --weight-bold
-   resolves to the SemiBold face; nothing in the system needs heavier.
+   0. FONTS: Manrope, self-hosted from ./manrope (woff2). Only 200–600 are
+   shipped, so --weight-bold resolves to the SemiBold face; nothing in the
+   system needs heavier. Paths are relative so the template works from the file
+   system and from a server root alike.
    ============================================================================= */
 @font-face {
   font-family: "Manrope";
-  src: url("/manrope/Manrope-ExtraLight.ttf") format("truetype");
+  src: url("manrope/Manrope-ExtraLight.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -33,7 +35,7 @@
 
 @font-face {
   font-family: "Manrope";
-  src: url("/manrope/Manrope-Light.ttf") format("truetype");
+  src: url("manrope/Manrope-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -41,7 +43,7 @@
 
 @font-face {
   font-family: "Manrope";
-  src: url("/manrope/Manrope-Regular.ttf") format("truetype");
+  src: url("manrope/Manrope-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -49,7 +51,7 @@
 
 @font-face {
   font-family: "Manrope";
-  src: url("/manrope/Manrope-Medium.ttf") format("truetype");
+  src: url("manrope/Manrope-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -57,7 +59,7 @@
 
 @font-face {
   font-family: "Manrope";
-  src: url("/manrope/Manrope-SemiBold.ttf") format("truetype");
+  src: url("manrope/Manrope-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;

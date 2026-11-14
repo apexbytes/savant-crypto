@@ -6,6 +6,7 @@
   --landing-muted: #79756d;
   --landing-line: #e6e4df;
   --landing-shell: 1200px;
+  --header-h: 76px;
 }
 
 html {
@@ -55,7 +56,7 @@ a:hover {
 .site-header {
   position: relative;
   z-index: 20;
-  height: 76px;
+  height: var(--header-h);
   background: var(--landing-paper);
 }
 
@@ -81,7 +82,7 @@ a:hover {
   align-items: center;
   gap: 9px;
   color: var(--landing-ink);
-  font-size: 23px;
+  font-size: 27px;
   font-weight: 700;
   letter-spacing: -1.3px;
 }
@@ -107,7 +108,7 @@ a:hover {
 .primary-nav a,
 .login-link {
   color: #5c5850;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 600;
   transition: color 160ms ease;
 }
@@ -132,7 +133,7 @@ a:hover {
   padding: 0 21px;
   border: 1px solid transparent;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
   transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
@@ -154,7 +155,7 @@ a:hover {
   min-height: 39px;
   gap: 12px;
   padding-inline: 16px;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .button-lime {
@@ -173,7 +174,7 @@ a:hover {
   place-items: center;
   border: 1px solid rgb(26 25 23 / 0.24);
   border-radius: 50%;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1;
 }
 
@@ -260,18 +261,11 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.14em;
   line-height: 1.4;
   text-transform: uppercase;
-}
-
-.hero-eyebrow {
-  margin-bottom: 27px;
-  color: rgb(255 255 255 / 0.67);
-  letter-spacing: 0.07em;
-  text-transform: none;
 }
 
 .live-dot,
@@ -300,7 +294,7 @@ a:hover {
   max-width: 416px;
   margin-top: 25px;
   color: rgb(255 255 255 / 0.68);
-  font-size: 15px;
+  font-size: 19px;
   line-height: 1.8;
 }
 
@@ -316,7 +310,7 @@ a:hover {
   align-items: center;
   gap: 12px;
   color: var(--landing-green);
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
   transition: gap 160ms ease;
 }
@@ -332,7 +326,7 @@ a:hover {
 
 .text-link-light span,
 .feature-link span {
-  font-size: 17px;
+  font-size: 21px;
   font-weight: 400;
 }
 
@@ -358,7 +352,7 @@ a:hover {
   border-radius: 50%;
   background: #d7ddc7;
   color: #354527;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -379,7 +373,7 @@ a:hover {
 
 .hero-proof p {
   color: rgb(255 255 255 / 0.57);
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -427,14 +421,14 @@ a:hover {
 .mini-overline {
   display: block;
   color: #79756d;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.13em;
 }
 
 .portfolio-balance {
   margin-top: 8px;
-  font-size: 31px;
+  font-size: 35px;
   font-weight: 600;
   letter-spacing: -1.5px;
   line-height: 1.1;
@@ -442,7 +436,7 @@ a:hover {
 
 .portfolio-balance span {
   color: #79756d;
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .visibility-button {
@@ -467,7 +461,7 @@ a:hover {
 .portfolio-change {
   margin-top: 9px;
   color: #5a7a37;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -500,7 +494,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   color: #aaa69d;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .portfolio-chart {
@@ -533,7 +527,7 @@ a:hover {
   justify-content: space-between;
   padding-top: 4px;
   color: #a8a49c;
-  font-size: 7px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.04em;
 }
@@ -558,7 +552,7 @@ a:hover {
   flex: 0 0 auto;
   place-items: center;
   border-radius: 50%;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
 }
 
@@ -584,7 +578,7 @@ a:hover {
 
 .asset-name,
 .asset-amount {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.4;
 }
@@ -593,7 +587,7 @@ a:hover {
 .asset-amount small {
   display: block;
   color: #969188;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -604,7 +598,7 @@ a:hover {
 .asset-move,
 .asset-stable {
   color: #5a7a37;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 700;
   text-align: right;
 }
@@ -619,20 +613,20 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   color: #79756d;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 
 .portfolio-footer > span:last-child {
   color: #4a6330;
-  font-size: 7px;
+  font-size: 11px;
   letter-spacing: 0.08em;
 }
 
 .portfolio-footer b {
   margin-left: 3px;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .secure-mark {
@@ -644,38 +638,7 @@ a:hover {
   border-radius: 50%;
   background: #e7f0d9;
   color: #5a7a37;
-  font-size: 9px;
-}
-
-.orbit-label {
-  position: absolute;
-  z-index: 1;
-  color: rgb(255 255 255 / 0.54);
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-}
-
-.orbit-label-top {
-  top: 28px;
-  left: 7%;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-}
-
-.orbit-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--landing-lime);
-}
-
-.orbit-label-bottom {
-  right: 3%;
-  bottom: 17px;
-  display: flex;
-  align-items: center;
+  font-size: 13px;
 }
 
 .floating-coin {
@@ -688,13 +651,13 @@ a:hover {
   border: 1px solid rgb(255 255 255 / 0.33);
   border-radius: 50%;
   box-shadow: 0 12px 30px rgb(0 0 0 / 0.2);
-  font-size: 19px;
+  font-size: 23px;
   font-weight: 600;
 }
 
 .floating-coin-one {
   top: 77px;
-  right: 1%;
+  right: calc((100% - 495px) / 2 - 52px);
   background: #32271b;
   color: #f7931a;
   transform: rotate(12deg);
@@ -702,12 +665,12 @@ a:hover {
 
 .floating-coin-two {
   bottom: 55px;
-  left: 0;
+  left: calc((100% - 495px) / 2 - 43px);
   width: 37px;
   height: 37px;
   background: #282632;
   color: #aca4f1;
-  font-size: 17px;
+  font-size: 21px;
   transform: rotate(-12deg);
 }
 
@@ -719,7 +682,7 @@ a:hover {
   align-items: center;
   gap: 10px;
   color: rgb(255 255 255 / 0.44);
-  font-size: 9px;
+  font-size: 13px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -761,7 +724,7 @@ a:hover {
 }
 
 .market-heading h2 {
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
@@ -787,7 +750,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -795,12 +758,12 @@ a:hover {
 .market-coin .coin-icon {
   width: 22px;
   height: 22px;
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .market-coin small {
   color: #969188;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -808,7 +771,7 @@ a:hover {
   grid-column: 1;
   margin-left: 29px;
   color: #79756d;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -816,7 +779,7 @@ a:hover {
 .market-change {
   grid-column: 2;
   grid-row: 1;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 700;
   text-align: right;
   white-space: nowrap;
@@ -866,7 +829,7 @@ a:hover {
   grid-column: 2;
   justify-self: end;
   color: #a8a49c;
-  font-size: 8px;
+  font-size: 12px;
   line-height: 1;
 }
 
@@ -916,7 +879,7 @@ a:hover {
   max-width: 305px;
   padding-bottom: 5px;
   color: #79756d;
-  font-size: 13px;
+  font-size: 17px;
   line-height: 1.8;
 }
 
@@ -951,7 +914,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   color: #a8a49c;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.13em;
 }
@@ -964,13 +927,13 @@ a:hover {
   border: 1px solid #e6e4df;
   border-radius: 50%;
   color: #79756d;
-  font-size: 13px;
+  font-size: 17px;
 }
 
 .feature-illustration {
   position: relative;
   display: grid;
-  height: 176px;
+  height: 206px;
   flex: 0 0 auto;
   place-items: center;
   margin: 18px -3px 21px;
@@ -981,7 +944,7 @@ a:hover {
 .balance-float {
   position: absolute;
   width: 74%;
-  height: 128px;
+  height: 152px;
   border: 1px solid rgb(90 122 55 / 0.14);
   border-radius: 5px;
   background: rgb(255 255 255 / 0.62);
@@ -997,31 +960,31 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 13px 15px 7px;
+  padding: 13px 15px 40px;
   box-shadow: 0 8px 22px rgb(26 25 23 / 0.09);
   transform: rotate(-2deg);
 }
 
 .mini-overline {
-  font-size: 7px;
+  font-size: 11px;
 }
 
 .mini-balance {
   margin-top: 5px;
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: -0.07em;
 }
 
 .mini-balance span {
   color: #969188;
-  font-size: 15px;
+  font-size: 19px;
 }
 
 .mini-growth {
   margin-top: 2px;
   color: #5a7a37;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -1040,16 +1003,16 @@ a:hover {
   top: 21px;
   right: 13%;
   display: grid;
-  width: 44px;
-  height: 44px;
+  width: 64px;
+  height: 64px;
   place-content: center;
   border: 1px solid rgb(90 122 55 / 0.17);
   border-radius: 50%;
   background: #8fc149;
   color: #293421;
-  font-size: 7px;
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   line-height: 1.15;
   text-align: center;
   transform: rotate(11deg);
@@ -1057,7 +1020,7 @@ a:hover {
 
 .feature-card h3 {
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: -0.055em;
   line-height: 1.24;
@@ -1066,7 +1029,7 @@ a:hover {
 .feature-card > p {
   max-width: 330px;
   color: #79756d;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.8;
 }
 
@@ -1078,7 +1041,7 @@ a:hover {
   margin-top: auto;
   padding-top: 20px;
   color: #4a6330;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   transition: gap 160ms ease;
 }
@@ -1140,7 +1103,7 @@ a:hover {
   border-radius: 50%;
   background: #e7efdc;
   color: #5a7a37;
-  font-size: 17px;
+  font-size: 21px;
   font-weight: 700;
 }
 
@@ -1151,7 +1114,7 @@ a:hover {
 
 .transfer-node small {
   color: #a8a49c;
-  font-size: 6px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.1em;
 }
@@ -1185,7 +1148,7 @@ a:hover {
   border-radius: 50%;
   background: #f4f4ef;
   color: #5a7a37;
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
 }
 
@@ -1194,7 +1157,7 @@ a:hover {
   right: 14px;
   bottom: 12px;
   color: #a8a49c;
-  font-size: 7px;
+  font-size: 11px;
   line-height: 1.45;
   text-align: right;
 }
@@ -1234,13 +1197,13 @@ a:hover {
 }
 
 .swap-token b {
-  font-size: 9px;
+  font-size: 13px;
 }
 
 .swap-token small {
   margin-top: 1px;
   color: #969188;
-  font-size: 7px;
+  font-size: 11px;
 }
 
 .swap-direction {
@@ -1249,13 +1212,13 @@ a:hover {
   justify-content: center;
   gap: 8px;
   color: #799552;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1;
 }
 
 .swap-direction small {
   color: #a8a49c;
-  font-size: 6px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.1em;
 }
@@ -1316,7 +1279,7 @@ a:hover {
   margin-top: 17px;
   margin-bottom: 25px;
   color: rgb(255 255 255 / 0.65);
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.8;
 }
 
@@ -1364,39 +1327,25 @@ a:hover {
   top: 50%;
   left: 50%;
   display: grid;
-  width: 102px;
-  height: 102px;
+  width: 118px;
+  height: 118px;
   place-items: center;
-  border: 1px solid rgb(255 255 255 / 0.2);
   border-radius: 50%;
-  background: linear-gradient(145deg, #91bd54, #546f37);
-  box-shadow: 0 0 70px rgb(143 193 73 / 0.22), inset 0 1px 1px rgb(255 255 255 / 0.35);
-  color: #26331e;
-  transform: translate(-50%, -50%) rotate(16deg);
+  box-shadow: 0 0 80px 10px rgb(143 193 73 / 0.16);
+  color: #ffffff;
+  transform: translate(-50%, -50%);
 }
 
-.quote-art-center span {
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: -0.1em;
-}
-
-.quote-art-center i {
-  position: absolute;
-  top: 15px;
-  right: 17px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #d9e8c1;
-  box-shadow: 0 0 10px rgb(255 255 255 / 0.4);
+.quote-art-center svg {
+  width: 100%;
+  height: 100%;
 }
 
 .quote-art-label,
 .quote-art-coordinate {
   position: absolute;
   color: rgb(255 255 255 / 0.52);
-  font-size: 7px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.16em;
 }
@@ -1436,7 +1385,7 @@ a:hover {
   max-width: 340px;
   margin-top: 20px;
   color: #79756d;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.85;
 }
 
@@ -1461,7 +1410,7 @@ a:hover {
   align-self: start;
   padding-top: 26px;
   color: #a8a49c;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -1487,7 +1436,7 @@ a:hover {
 
 .trust-item h3 {
   margin-bottom: 5px;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
@@ -1495,13 +1444,13 @@ a:hover {
 .trust-item p {
   max-width: 390px;
   color: #79756d;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
 .trust-arrow {
   color: #9caa85;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .get-started-section {
@@ -1570,7 +1519,7 @@ a:hover {
 .get-started-action > p {
   max-width: 300px;
   color: #5c5850;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -1593,7 +1542,7 @@ a:hover {
   align-items: center;
   gap: 8px;
   color: #79756d;
-  font-size: 9px;
+  font-size: 13px;
 }
 
 .availability-dot {
@@ -1604,19 +1553,18 @@ a:hover {
 
 .get-started-mark {
   position: absolute;
-  top: 22px;
-  right: -15px;
-  color: rgb(90 122 55 / 0.08);
-  font-size: 245px;
-  font-weight: 700;
-  letter-spacing: -0.16em;
-  line-height: 1;
+  top: 26px;
+  right: 6px;
+  width: 196px;
+  height: 196px;
+  color: rgb(90 122 55 / 0.1);
   pointer-events: none;
 }
 
-.get-started-mark span,
-.footer-note-mark span {
-  color: #71a53a;
+.get-started-mark svg,
+.footer-note-mark svg {
+  width: 100%;
+  height: 100%;
 }
 
 .site-footer {
@@ -1635,19 +1583,19 @@ a:hover {
 
 .footer-brand {
   color: white;
-  font-size: 21px;
+  font-size: 25px;
 }
 
 .footer-brand .brand-mark {
   width: 27px;
   height: 27px;
-  color: #8fc149;
+  color: #ffffff;
 }
 
 .footer-brand-block > p {
   margin-top: 12px;
   color: #97938c;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .footer-links {
@@ -1667,14 +1615,14 @@ a:hover {
 .footer-note > span {
   margin-bottom: 3px;
   color: #8e8a82;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.13em;
 }
 
 .footer-links a {
   color: #d0cec8;
-  font-size: 10px;
+  font-size: 14px;
   transition: color 150ms ease;
 }
 
@@ -1692,15 +1640,9 @@ a:hover {
 }
 
 .footer-note-mark {
-  color: #45443f;
-  font-size: 69px;
-  font-weight: 700;
-  letter-spacing: -0.14em;
-  line-height: 0.9;
-}
-
-.footer-note-mark span {
-  color: #647d46;
+  width: 62px;
+  height: 62px;
+  color: #4b4a44;
 }
 
 .footer-bottom {
@@ -1711,7 +1653,7 @@ a:hover {
   gap: 20px;
   border-top: 1px solid rgb(255 255 255 / 0.1);
   color: #8e8a82;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .footer-bottom > div {
@@ -1748,6 +1690,13 @@ a:hover {
 @media (max-width: 1080px) {
   :root {
     --landing-shell: 930px;
+  }
+
+  /* The card now fills its column, so there is no gutter left for the badges
+     to float in — below this they would clip off the edge of the viewport. */
+  .floating-coin-one,
+  .floating-coin-two {
+    display: none;
   }
 
   .hero-inner {
@@ -1792,9 +1741,73 @@ a:hover {
   .trust-shell {
     gap: 60px;
   }
+
+  .menu-toggle {
+    display: flex;
+    width: 38px;
+    height: 38px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-left: auto;
+    border: 1px solid #dedcd5;
+    border-radius: 5px;
+  }
+
+  .menu-toggle span:not(.sr-only) {
+    width: 15px;
+    height: 1px;
+    background: var(--landing-ink);
+    transition: transform 160ms ease;
+  }
+
+  .menu-toggle[aria-expanded="true"] span:nth-last-child(2) {
+    transform: translateY(3px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded="true"] span:last-child {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+
+  .primary-nav {
+    position: absolute;
+    top: var(--header-h);
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 20px 14px;
+    border-top: 1px solid #e6e4df;
+    background: var(--landing-paper);
+    box-shadow: 0 12px 18px rgb(26 25 23 / 0.08);
+  }
+
+  .primary-nav.is-open {
+    display: flex;
+  }
+
+  .primary-nav a {
+    padding: 12px 0;
+    border-bottom: 1px solid #e6e4df;
+  }
+
+  .primary-nav a:last-child {
+    border-bottom: 0;
+  }
+
+  .header-actions {
+    margin-left: 14px;
+  }
 }
 
 @media (max-width: 820px) {
+  :root {
+    --header-h: 68px;
+  }
+
   .header-inner,
   .section-shell,
   .market-strip-inner,
@@ -1803,10 +1816,6 @@ a:hover {
   .footer-bottom,
   .get-started-inner {
     width: min(100% - 44px, 680px);
-  }
-
-  .site-header {
-    height: 68px;
   }
 
   .primary-nav {
@@ -1839,7 +1848,7 @@ a:hover {
   }
 
   .hero-description {
-    font-size: 13px;
+    font-size: 17px;
   }
 
   .hero-actions {
@@ -1862,11 +1871,11 @@ a:hover {
   }
 
   .portfolio-balance {
-    font-size: 25px;
+    font-size: 29px;
   }
 
   .portfolio-balance span {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .asset-row {
@@ -1876,14 +1885,6 @@ a:hover {
 
   .asset-row > :last-child {
     display: none;
-  }
-
-  .orbit-label-top {
-    left: 0;
-  }
-
-  .floating-coin-one {
-    right: -2%;
   }
 
   .hero-bottom-note {
@@ -1939,7 +1940,7 @@ a:hover {
   }
 
   .quote-art-center span {
-    font-size: 37px;
+    font-size: 41px;
   }
 
   .trust-shell {
@@ -1962,6 +1963,10 @@ a:hover {
 }
 
 @media (max-width: 620px) {
+  :root {
+    --header-h: 64px;
+  }
+
   .header-inner,
   .section-shell,
   .market-strip-inner,
@@ -1972,73 +1977,13 @@ a:hover {
     width: calc(100% - 40px);
   }
 
-  .site-header {
-    height: 64px;
-  }
-
   .brand {
-    font-size: 21px;
+    font-size: 25px;
   }
 
   .brand-mark {
     width: 27px;
     height: 27px;
-  }
-
-  .menu-toggle {
-    display: flex;
-    width: 38px;
-    height: 38px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    margin-left: auto;
-    border: 1px solid #dedcd5;
-    border-radius: 5px;
-  }
-
-  .menu-toggle span:not(.sr-only) {
-    width: 15px;
-    height: 1px;
-    background: var(--landing-ink);
-    transition: transform 160ms ease;
-  }
-
-  .menu-toggle[aria-expanded="true"] span:nth-last-child(2) {
-    transform: translateY(3px) rotate(45deg);
-  }
-
-  .menu-toggle[aria-expanded="true"] span:last-child {
-    transform: translateY(-3px) rotate(-45deg);
-  }
-
-  .primary-nav {
-    position: absolute;
-    top: 64px;
-    right: 0;
-    left: 0;
-    display: none;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    padding: 8px 20px 14px;
-    border-top: 1px solid #e6e4df;
-    background: var(--landing-paper);
-    box-shadow: 0 12px 18px rgb(26 25 23 / 0.08);
-  }
-
-  .primary-nav.is-open {
-    display: flex;
-  }
-
-  .primary-nav a {
-    padding: 12px 0;
-    border-bottom: 1px solid #e6e4df;
-  }
-
-  .primary-nav a:last-child {
-    border-bottom: 0;
   }
 
   .header-actions {
@@ -2053,7 +1998,7 @@ a:hover {
   .button-small {
     min-height: 36px;
     padding-inline: 11px;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .button-small span {
@@ -2076,11 +2021,6 @@ a:hover {
     padding: 0;
   }
 
-  .hero-eyebrow {
-    margin-bottom: 22px;
-    font-size: 9px;
-  }
-
   .hero h1 {
     font-size: clamp(54px, 14vw, 74px);
   }
@@ -2088,7 +2028,7 @@ a:hover {
   .hero-description {
     max-width: 360px;
     margin-top: 18px;
-    font-size: 13px;
+    font-size: 17px;
     line-height: 1.75;
   }
 
@@ -2103,18 +2043,18 @@ a:hover {
     min-height: 44px;
     gap: 10px;
     padding-inline: 13px;
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .hero-actions .button-arrow {
     width: 20px;
     height: 20px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .hero-actions .text-link {
     gap: 7px;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .hero-proof {
@@ -2136,11 +2076,11 @@ a:hover {
   }
 
   .portfolio-balance {
-    font-size: 26px;
+    font-size: 30px;
   }
 
   .portfolio-balance span {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .chart-wrap {
@@ -2155,34 +2095,6 @@ a:hover {
 
   .asset-row > :last-child {
     display: none;
-  }
-
-  .orbit-label-top {
-    top: 3px;
-    left: 7px;
-    font-size: 7px;
-  }
-
-  .orbit-label-bottom {
-    right: 2px;
-    bottom: 0;
-    font-size: 7px;
-  }
-
-  .floating-coin-one {
-    top: 45px;
-    right: -6px;
-    width: 35px;
-    height: 35px;
-    font-size: 15px;
-  }
-
-  .floating-coin-two {
-    bottom: 39px;
-    left: -6px;
-    width: 31px;
-    height: 31px;
-    font-size: 14px;
   }
 
   .hero-bottom-note {
@@ -2218,26 +2130,26 @@ a:hover {
 
   .market-coin {
     gap: 5px;
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .market-coin .coin-icon {
     width: 19px;
     height: 19px;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .market-coin small {
-    font-size: 7px;
+    font-size: 11px;
   }
 
   .market-price {
     grid-row: 2;
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .market-change {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .sparkline {
@@ -2246,7 +2158,7 @@ a:hover {
   }
 
   .market-disclaimer {
-    font-size: 7px;
+    font-size: 11px;
   }
 
   .section-pad {
@@ -2262,7 +2174,7 @@ a:hover {
 
   .section-eyebrow {
     margin-bottom: 18px;
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .section-heading h2,
@@ -2272,7 +2184,7 @@ a:hover {
 
   .section-intro {
     max-width: 360px;
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .feature-grid {
@@ -2295,11 +2207,11 @@ a:hover {
   }
 
   .feature-card h3 {
-    font-size: 19px;
+    font-size: 23px;
   }
 
   .feature-card > p {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .quote-shell {
@@ -2311,7 +2223,7 @@ a:hover {
 
   .quote-eyebrow {
     margin-bottom: 19px;
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .quote-copy h2 {
@@ -2322,12 +2234,12 @@ a:hover {
     max-width: 310px;
     margin-top: 12px;
     margin-bottom: 19px;
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .quote-copy .button {
     min-height: 44px;
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .quote-art {
@@ -2341,12 +2253,12 @@ a:hover {
   }
 
   .quote-art-center span {
-    font-size: 30px;
+    font-size: 34px;
   }
 
   .quote-art-label,
   .quote-art-coordinate {
-    font-size: 6px;
+    font-size: 11px;
   }
 
   .trust-shell {
@@ -2355,7 +2267,7 @@ a:hover {
 
   .trust-intro > p:not(.eyebrow) {
     margin-top: 15px;
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .trust-link {
@@ -2370,7 +2282,7 @@ a:hover {
 
   .trust-number {
     padding-top: 25px;
-    font-size: 7px;
+    font-size: 11px;
   }
 
   .trust-icon {
@@ -2383,11 +2295,11 @@ a:hover {
   }
 
   .trust-item h3 {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .trust-item p {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .get-started-inner {
@@ -2398,17 +2310,18 @@ a:hover {
   }
 
   .get-started-inner h2 {
-    font-size: 47px;
+    font-size: 51px;
   }
 
   .get-started-action > p {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .get-started-mark {
-    top: 8px;
-    right: -14px;
-    font-size: 165px;
+    top: 10px;
+    right: -6px;
+    width: 132px;
+    height: 132px;
   }
 
   .footer-main {
@@ -2431,7 +2344,8 @@ a:hover {
   }
 
   .footer-note-mark {
-    font-size: 54px;
+    width: 50px;
+    height: 50px;
   }
 
   .footer-bottom {
@@ -2439,7 +2353,7 @@ a:hover {
     flex-wrap: wrap;
     gap: 11px;
     padding-block: 14px;
-    font-size: 7px;
+    font-size: 11px;
   }
 
   .footer-legal {

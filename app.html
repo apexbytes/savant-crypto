@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f2ef">
+    <meta name="description" content="Explore the Savant customer exchange demo. Sample balances and transactions only.">
+    <title>Exchange — Savant demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body class="app-body">
+    <a class="skip-link" href="#app-main">Skip to content</a>
+    <div class="app-layout">
+      <aside class="app-sidebar" aria-label="Savant exchange">
+        <a class="app-brand" href="index.html" aria-label="Savant home">
+          <svg viewBox="0 0 36 36" aria-hidden="true">
+            <path d="M18 2.5 33.5 11v14L18 33.5 2.5 25V11L18 2.5Z" fill="currentColor"/>
+            <path d="m18 9 8 4.5v9L18 27l-8-4.5v-9L18 9Z" fill="#f3f2ef"/>
+            <path d="m18 13.2 4.3 2.4v4.8L18 22.8l-4.3-2.4v-4.8l4.3-2.4Z" fill="currentColor"/>
+          </svg>
+          <span>savant<span>.</span></span>
+        </a>
+        <div class="sidebar-demo"><span></span> PRODUCT PREVIEW</div>
+
+        <p class="sidebar-label">YOUR EXCHANGE</p>
+        <nav class="app-nav" aria-label="Customer navigation">
+          <button class="app-nav-link is-active" type="button" data-view="overview"><span class="nav-glyph">◫</span> Overview</button>
+          <button class="app-nav-link" type="button" data-view="assets"><span class="nav-glyph">◈</span> My assets</button>
+          <button class="app-nav-link" type="button" data-view="activity"><span class="nav-glyph">↕</span> Activity <span class="nav-count">2</span></button>
+          <button class="app-nav-link" type="button" data-view="accounts"><span class="nav-glyph">▤</span> Accounts</button>
+        </nav>
+
+        <p class="sidebar-label sidebar-label-actions">QUICK ACTIONS</p>
+        <div class="sidebar-actions">
+          <button type="button" data-action="deposit"><span class="quick-glyph quick-deposit">↓</span> Deposit</button>
+          <button type="button" data-action="transfer"><span class="quick-glyph quick-transfer">↗</span> Transfer</button>
+          <button type="button" data-action="withdraw"><span class="quick-glyph quick-withdraw">↑</span> Withdraw</button>
+          <button type="button" data-action="buy"><span class="quick-glyph quick-buy">+</span> Buy crypto</button>
+          <button type="button" data-action="sell"><span class="quick-glyph quick-sell">−</span> Sell crypto</button>
+          <button type="button" data-action="swap"><span class="quick-glyph quick-swap">⇄</span> Swap</button>
+        </div>
+
+        <div class="sidebar-spacer"></div>
+        <div class="sidebar-help">
+          <span class="help-icon">?</span>
+          <div><strong>Need a hand?</strong><a href="mailto:hello@savantcrypto.com">Talk to our team <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="sidebar-profile">
+          <span class="profile-avatar">JD</span>
+          <span class="profile-copy"><strong>Jordan Davis</strong><small>Personal account</small></span>
+          <button type="button" class="profile-menu" data-view="settings" aria-label="Open profile and settings">···</button>
+        </div>
+      </aside>
+
+      <div class="app-workspace">
+        <header class="app-topbar">
+          <div class="mobile-brand-row">
+            <a class="app-brand" href="index.html" aria-label="Savant home">
+              <svg viewBox="0 0 36 36" aria-hidden="true">
+                <path d="M18 2.5 33.5 11v14L18 33.5 2.5 25V11L18 2.5Z" fill="currentColor"/>
+                <path d="m18 9 8 4.5v9L18 27l-8-4.5v-9L18 9Z" fill="#f3f2ef"/>
+                <path d="m18 13.2 4.3 2.4v4.8L18 22.8l-4.3-2.4v-4.8l4.3-2.4Z" fill="currentColor"/>
+              </svg>
+              <span>savant<span>.</span></span>
+            </a>
+            <span class="sidebar-demo"><span></span> DEMO</span>
+          </div>
+          <div class="topbar-crumb"><span>Personal</span><span class="crumb-slash">/</span><strong id="topbar-title">Overview</strong></div>
+          <div class="topbar-tools">
+            <label class="app-search">
+              <span aria-hidden="true">⌕</span>
+              <span class="sr-only">Search assets and activity</span>
+              <input id="global-search" type="search" placeholder="Search anything" autocomplete="off">
+              <kbd>⌘ K</kbd>
+            </label>
+            <button type="button" class="icon-button notification-button" aria-label="Notifications"><span aria-hidden="true">♧</span><i></i></button>
+            <button type="button" class="topbar-user" data-view="settings" aria-label="Open Jordan Davis profile">JD</button>
+          </div>
+        </header>
+
+        <main class="app-main" id="app-main">
+          <div class="demo-banner" role="note">
+            <span class="demo-banner-icon">i</span>
+            <p><strong>Preview environment.</strong> Balances, prices and activity are sample data. Actions are simulated and do not move funds.</p>
+            <button type="button" class="demo-banner-close" aria-label="Dismiss preview notice">×</button>
+          </div>
+
+          <section class="app-view is-visible" id="view-overview" data-view-panel="overview" aria-labelledby="page-title">
+            <div class="page-heading overview-heading">
+              <div><p class="page-kicker">SATURDAY, 14 NOVEMBER 2026 <span class="heading-dot"></span> SAMPLE DATA</p><h1 id="page-title">Good afternoon, Jordan<span>.</span></h1><p class="page-subtitle">Here's your money at a glance.</p></div>
+              <button type="button" class="outline-button" data-action="deposit"><span>＋</span> Add funds</button>
+            </div>
+
+              <div class="quick-actions" aria-label="Quick actions">
+                <button type="button" data-action="deposit"><span class="quick-glyph quick-deposit">↓</span> Deposit</button>
+                <button type="button" data-action="transfer"><span class="quick-glyph quick-transfer">↗</span> Transfer</button>
+                <button type="button" data-action="withdraw"><span class="quick-glyph quick-withdraw">↑</span> Withdraw</button>
+                <button type="button" data-action="buy"><span class="quick-glyph quick-buy">＋</span> Buy</button>
+                <button type="button" data-action="sell"><span class="quick-glyph quick-sell">−</span> Sell</button>
+                <button type="button" data-action="swap"><span class="quick-glyph quick-swap">⇄</span> Swap</button>
+              </div>
+
+              <div class="overview-grid">
+                <article class="surface-card total-card">
+                  <div class="card-title-row"><div><p class="card-label">TOTAL PORTFOLIO</p><button class="balance-toggle" type="button" aria-pressed="false"><span class="portfolio-total">$24,680.42</span><span class="balance-eye" aria-hidden="true">◉</span><span class="sr-only">Hide balance</span></button></div><span class="period-button" aria-label="Chart period: one month">1M</span></div>
+                <div class="balance-performance"><span class="performance-pill">↗ 5.32%</span><span>+$1,248.80</span><span class="muted-copy">past month</span></div>
+                <div class="overview-chart">
+                  <div class="chart-y-labels" aria-hidden="true"><span>$26k</span><span>$24k</span><span>$22k</span><span>$20k</span></div>
+                  <svg viewBox="0 0 720 190" preserveAspectRatio="none" role="img" aria-label="Illustrative portfolio balance chart, trending upward over one month">
+                    <defs><linearGradient id="appChartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#8fc149" stop-opacity=".2"/><stop offset="100%" stop-color="#8fc149" stop-opacity="0"/></linearGradient></defs>
+                    <path d="M0 148 C24 142 30 157 51 142 S83 119 103 131 S130 138 146 104 S174 112 192 99 S223 113 244 82 S272 93 290 76 S320 89 340 67 S371 79 392 58 S420 72 441 48 S470 60 490 40 S520 54 540 34 S568 46 588 29 S619 39 638 24 S665 31 684 12 S706 20 720 8 V190 H0 Z" fill="url(#appChartFill)"/>
+                    <path d="M0 148 C24 142 30 157 51 142 S83 119 103 131 S130 138 146 104 S174 112 192 99 S223 113 244 82 S272 93 290 76 S320 89 340 67 S371 79 392 58 S420 72 441 48 S470 60 490 40 S520 54 540 34 S568 46 588 29 S619 39 638 24 S665 31 684 12 S706 20 720 8" fill="none" stroke="#719c3b" stroke-width="2.5" vector-effect="non-scaling-stroke"/>
+                    <circle cx="720" cy="8" r="5" fill="#719c3b" stroke="white" stroke-width="3" vector-effect="non-scaling-stroke"/>
+                  </svg>
+                  <div class="chart-x-labels" aria-hidden="true"><span>OCT 15</span><span>OCT 22</span><span>OCT 29</span><span>NOV 05</span><span>NOV 14</span></div>
+                </div>
+              </article>
+
+              <article class="surface-card allocation-card">
+                <div class="card-title-row"><div><p class="card-label">YOUR ASSETS</p><h2 class="card-heading">Allocation</h2></div><button class="more-button" type="button" data-view="assets" aria-label="View all assets">···</button></div>
+                <div class="allocation-content">
+                  <div class="allocation-donut"><div><strong>$24.6k</strong><span>total value</span></div></div>
+                  <div class="allocation-legend">
+                    <div><i class="legend-btc"></i><span>Bitcoin</span><strong>50.5%</strong></div>
+                    <div><i class="legend-eth"></i><span>Ethereum</span><strong>33.0%</strong></div>
+                    <div><i class="legend-usdc"></i><span>USD Coin</span><strong>16.5%</strong></div>
+                  </div>
+                </div>
+                <button class="card-bottom-link" type="button" data-view="assets">See all assets <span>→</span></button>
+              </article>
+            </div>
+
+            <div class="section-title-row"><div><p class="card-label">YOUR PORTFOLIO</p><h2 class="content-heading">Your assets</h2></div><button class="subtle-link" type="button" data-view="assets">View all assets <span>→</span></button></div>
+            <div class="surface-card table-card">
+              <div class="table-scroll"><table class="data-table">
+                <thead><tr><th>ASSET</th><th>PRICE</th><th>24H</th><th>HOLDINGS</th><th>VALUE</th><th><span class="sr-only">Actions</span></th></tr></thead>
+                <tbody>
+                  <tr data-searchable="Bitcoin BTC"><td><div class="table-asset"><span class="coin-icon coin-btc">₿</span><span><strong>Bitcoin</strong><small>BTC</small></span></div></td><td>$67,482.10</td><td class="text-positive">+2.41%</td><td>0.1842 BTC</td><td><strong>$12,458.20</strong></td><td><button class="row-arrow" type="button" data-asset="BTC" aria-label="View Bitcoin details">↗</button></td></tr>
+                  <tr data-searchable="Ethereum ETH"><td><div class="table-asset"><span class="coin-icon coin-eth">◆</span><span><strong>Ethereum</strong><small>ETH</small></span></div></td><td>$3,028.44</td><td class="text-positive">+1.86%</td><td>2.8100 ETH</td><td><strong>$8,146.72</strong></td><td><button class="row-arrow" type="button" data-asset="ETH" aria-label="View Ethereum details">↗</button></td></tr>
+                  <tr data-searchable="USD Coin USDC"><td><div class="table-asset"><span class="coin-icon coin-usdc">$</span><span><strong>USD Coin</strong><small>USDC</small></span></div></td><td>$1.00</td><td class="text-positive">+0.01%</td><td>4,075.50 USDC</td><td><strong>$4,075.50</strong></td><td><button class="row-arrow" type="button" data-asset="USDC" aria-label="View USD Coin details">↗</button></td></tr>
+                </tbody>
+              </table></div>
+              <div class="table-footnote"><span><i class="live-indicator"></i> Sample market snapshot</span><span>Prices shown for demonstration only</span></div>
+            </div>
+
+            <div class="overview-lower-grid">
+              <section class="surface-card activity-preview">
+                <div class="section-title-row compact-title"><div><p class="card-label">LATEST</p><h2 class="card-heading">Recent activity</h2></div><button class="subtle-link" type="button" data-view="activity">See all <span>→</span></button></div>
+                <div class="mini-activity-list">
+                  <button class="mini-activity" type="button" data-activity="a1"><span class="activity-symbol activity-in">↓</span><span class="activity-copy"><strong>Received Bitcoin</strong><small>Today, 10:42 AM · On-chain deposit</small></span><span class="activity-amount">+0.025 BTC<small>+$1,687.05</small></span><span class="status-tag status-complete">Complete</span></button>
+                  <button class="mini-activity" type="button" data-activity="a2"><span class="activity-symbol activity-swap">⇄</span><span class="activity-copy"><strong>BTC → ETH</strong><small>Yesterday, 4:18 PM · Swap</small></span><span class="activity-amount">−0.012 BTC<small>−$809.79</small></span><span class="status-tag status-complete">Complete</span></button>
+                  <button class="mini-activity" type="button" data-activity="a3"><span class="activity-symbol activity-out">↑</span><span class="activity-copy"><strong>Sent USD Coin</strong><small>Nov 11, 2:05 PM · Withdrawal</small></span><span class="activity-amount">−500 USDC<small>−$500.00</small></span><span class="status-tag status-pending">Pending</span></button>
+                </div>
+              </section>
+              <section class="surface-card rates-card">
+                <div class="section-title-row compact-title"><div><p class="card-label">MARKET SNAPSHOT</p><h2 class="card-heading">Exchange rates</h2></div><span class="rates-indicative">Indicative</span></div>
+                <div class="rate-row"><span><span class="coin-icon coin-btc">₿</span> 1 BTC</span><span>≈</span><strong>67,482.10 USD</strong></div>
+                <div class="rate-row"><span><span class="coin-icon coin-eth">◆</span> 1 ETH</span><span>≈</span><strong>3,028.44 USD</strong></div>
+                <div class="rate-row"><span><span class="coin-icon coin-usdc">$</span> 1 USDC</span><span>≈</span><strong>1.00 USD</strong></div>
+                <p class="rates-note">Sample rates for preview only. Final rates may vary.</p>
+              </section>
+            </div>
+          </section>
+
+          <section class="app-view" id="view-assets" data-view-panel="assets" aria-labelledby="assets-title" hidden>
+            <div class="page-heading"><div><p class="page-kicker">YOUR PORTFOLIO <span class="heading-dot"></span> SAMPLE DATA</p><h1 id="assets-title">My assets<span>.</span></h1><p class="page-subtitle">A clear view of everything you hold.</p></div><button type="button" class="outline-button" data-action="buy"><span>＋</span> Buy crypto</button></div>
+            <div class="assets-total-card surface-card"><div><p class="card-label">TOTAL ASSET VALUE</p><strong>$24,680.42</strong><span class="performance-pill">↗ 5.32% this month</span></div><div class="asset-total-actions"><button class="outline-button" type="button" data-action="deposit">Deposit</button><button class="outline-button" type="button" data-action="swap">Swap</button></div></div>
+            <div class="section-title-row assets-title-row"><div><p class="card-label">CRYPTO & STABLECOINS</p><h2 class="content-heading">Your holdings</h2></div><label class="table-search"><span aria-hidden="true">⌕</span><span class="sr-only">Filter assets</span><input type="search" placeholder="Filter assets" data-filter-table="assets-table"></label></div>
+            <div class="surface-card table-card"><div class="table-scroll"><table class="data-table" id="assets-table"><thead><tr><th>ASSET</th><th>PRICE</th><th>24H CHANGE</th><th>HOLDINGS</th><th>VALUE</th><th><span class="sr-only">Actions</span></th></tr></thead><tbody>
+              <tr data-searchable="Bitcoin BTC"><td><div class="table-asset"><span class="coin-icon coin-btc">₿</span><span><strong>Bitcoin</strong><small>BTC</small></span></div></td><td>$67,482.10</td><td class="text-positive">+2.41%</td><td>0.1842 BTC</td><td><strong>$12,458.20</strong></td><td><button class="row-arrow" type="button" data-asset="BTC" aria-label="View Bitcoin details">↗</button></td></tr>
+              <tr data-searchable="Ethereum ETH"><td><div class="table-asset"><span class="coin-icon coin-eth">◆</span><span><strong>Ethereum</strong><small>ETH</small></span></div></td><td>$3,028.44</td><td class="text-positive">+1.86%</td><td>2.8100 ETH</td><td><strong>$8,146.72</strong></td><td><button class="row-arrow" type="button" data-asset="ETH" aria-label="View Ethereum details">↗</button></td></tr>
+              <tr data-searchable="USD Coin USDC"><td><div class="table-asset"><span class="coin-icon coin-usdc">$</span><span><strong>USD Coin</strong><small>USDC</small></span></div></td><td>$1.00</td><td class="text-positive">+0.01%</td><td>4,075.50 USDC</td><td><strong>$4,075.50</strong></td><td><button class="row-arrow" type="button" data-asset="USDC" aria-label="View USD Coin details">↗</button></td></tr>
+            </tbody></table></div><div class="table-footnote"><span><i class="live-indicator"></i> Illustrative balances & market prices</span><span>Last updated just now</span></div></div>
+            <section class="tokenized-card surface-card">
+              <div class="tokenized-mark" aria-hidden="true">◈</div><div class="tokenized-copy"><p class="card-label">EXPLORE MORE</p><h2>Tokenized assets</h2><p>Discover digital representations of real-world assets, with clear information on eligibility, issuer, fees and risks.</p></div><span class="coming-soon-tag">PREVIEW</span><button class="outline-button tokenized-open" type="button" data-open-tokenized>Explore tokenization <span>↗</span></button>
+            </section>
+          </section>
+
+          <section class="app-view" id="view-activity" data-view-panel="activity" aria-labelledby="activity-title" hidden>
+            <div class="page-heading"><div><p class="page-kicker">YOUR TRANSACTION HISTORY <span class="heading-dot"></span> SAMPLE DATA</p><h1 id="activity-title">Activity<span>.</span></h1><p class="page-subtitle">Every move, all in one place.</p></div><button type="button" class="outline-button" data-action="deposit"><span>＋</span> Add funds</button></div>
+            <div class="activity-toolbar surface-card"><div class="activity-tabs" role="group" aria-label="Filter by transaction status"><button type="button" class="activity-tab is-selected" data-activity-filter="all" aria-pressed="true">All <span>8</span></button><button type="button" class="activity-tab" data-activity-filter="complete" aria-pressed="false">Completed <span>6</span></button><button type="button" class="activity-tab" data-activity-filter="pending" aria-pressed="false">Pending <span>2</span></button></div><div class="activity-filters"><label class="table-search"><span aria-hidden="true">⌕</span><span class="sr-only">Search activity</span><input id="activity-search" type="search" placeholder="Search activity"></label><label class="select-filter"><span class="sr-only">Filter activity type</span><select id="type-filter"><option value="all">All activity</option><option value="deposit">Deposits</option><option value="withdrawal">Withdrawals</option><option value="swap">Swaps</option><option value="buy">Buys</option><option value="sell">Sells</option><option value="transfer">Transfers</option></select></label></div></div>
+            <div class="surface-card activity-table-card"><div class="table-scroll"><table class="data-table activity-table"><thead><tr><th>TRANSACTION</th><th>DATE</th><th>ACCOUNT</th><th>AMOUNT</th><th>STATUS</th><th><span class="sr-only">Details</span></th></tr></thead><tbody id="activity-rows"></tbody></table></div><div class="empty-state" id="activity-empty" hidden><span>⌕</span><strong>No activity found</strong><p>Try adjusting your filters or search terms.</p><button type="button" class="subtle-link" data-reset-activity>Clear filters</button></div><div class="table-footnote"><span>Showing sample transactions</span><span>Values shown for demonstration only</span></div></div>
+          </section>
+
+          <section class="app-view" id="view-accounts" data-view-panel="accounts" aria-labelledby="accounts-title" hidden>
+            <div class="page-heading"><div><p class="page-kicker">YOUR MONEY, ORGANIZED <span class="heading-dot"></span> SAMPLE DATA</p><h1 id="accounts-title">Accounts<span>.</span></h1><p class="page-subtitle">Manage your currency accounts and deposit details.</p></div><button type="button" class="outline-button" data-action="transfer"><span>↗</span> Transfer</button></div>
+            <div class="account-grid">
+              <article class="account-card account-fiat surface-card"><div class="account-card-top"><span class="account-icon fiat-icon">$</span><span class="account-type">FIAT ACCOUNT</span><span class="more-button" aria-hidden="true">···</span></div><h2>US dollar account</h2><p class="account-number">USD ·· 2841 <button type="button" class="copy-value" data-copy="•••• 2841" aria-label="Copy account number">⧉</button></p><div class="account-balance-row"><span>Available balance</span><strong>$4,075.50</strong></div><div class="account-card-actions"><button class="outline-button" type="button" data-action="buy">Add funds</button><button class="text-button" type="button" data-action="sell">Withdraw USD <span>→</span></button></div></article>
+              <article class="account-card account-crypto surface-card"><div class="account-card-top"><span class="account-icon crypto-icon">₿</span><span class="account-type">CRYPTO ACCOUNT</span><span class="more-button" aria-hidden="true">···</span></div><h2>Digital assets</h2><p class="account-number">Multi-asset account</p><div class="account-balance-row"><span>Available balance</span><strong>$20,604.92</strong></div><div class="account-card-actions"><button class="outline-button" type="button" data-action="deposit">Deposit crypto</button><button class="text-button" type="button" data-view="assets">View holdings <span>→</span></button></div></article>
+            </div>
+            <div class="section-title-row address-title-row"><div><p class="card-label">ON-CHAIN DEPOSITS</p><h2 class="content-heading">Deposit addresses</h2></div><button type="button" class="outline-button" data-action="deposit">＋ New deposit</button></div>
+            <div class="surface-card address-card"><div class="address-card-heading"><div><h3>Your saved addresses</h3><p>Always check the asset and network before sending funds.</p></div><span class="address-security"><span>✓</span> Address book</span></div>
+              <div class="address-row"><span class="coin-icon coin-btc">₿</span><span class="address-asset"><strong>Bitcoin</strong><small>Bitcoin network</small></span><span class="address-value">sample-btc-address-not-for-deposits<span>Sample only · no funds received</span></span><button type="button" class="copy-address" data-copy="sample-btc-address-not-for-deposits">Copy <span>⧉</span></button></div>
+              <div class="address-row"><span class="coin-icon coin-eth">◆</span><span class="address-asset"><strong>Ethereum</strong><small>Ethereum network</small></span><span class="address-value">sample-eth-address-not-for-deposits<span>Sample only · no funds received</span></span><button type="button" class="copy-address" data-copy="sample-eth-address-not-for-deposits">Copy <span>⧉</span></button></div>
+              <div class="address-row"><span class="coin-icon coin-usdc">$</span><span class="address-asset"><strong>USD Coin</strong><small>Ethereum network</small></span><span class="address-value">sample-usdc-address-not-for-deposits<span>Sample only · no funds received</span></span><button type="button" class="copy-address" data-copy="sample-usdc-address-not-for-deposits">Copy <span>⧉</span></button></div>
+            </div>
+            <div class="account-note"><span>i</span><p><strong>About deposit addresses</strong> Addresses and supported networks vary by asset. Sending to the wrong network may result in a permanent loss. These are non-functional examples; do not send funds.</p></div>
+          </section>
+
+          <section class="app-view" id="view-settings" data-view-panel="settings" aria-labelledby="settings-title" hidden>
+            <div class="page-heading"><div><p class="page-kicker">YOUR PROFILE <span class="heading-dot"></span> PREVIEW</p><h1 id="settings-title">Your details<span>.</span></h1><p class="page-subtitle">The personal details and preferences for your account.</p></div></div>
+            <div class="settings-grid">
+              <section class="surface-card settings-card"><div class="settings-section-head"><div><p class="card-label">PERSONAL INFORMATION</p><h2 class="card-heading">Your profile</h2></div><button class="text-button" type="button" data-profile-edit>Edit details <span>↗</span></button></div><div class="profile-detail-list"><div><span>Full name</span><strong>Jordan Davis</strong></div><div><span>Email address</span><strong>jordan.davis@example.com</strong></div><div><span>Account type</span><strong>Personal</strong></div><div><span>Preferred currency</span><strong>USD — US Dollar</strong></div></div></section>
+              <section class="surface-card settings-card verification-card"><div class="settings-section-head"><div><p class="card-label">ACCOUNT READINESS</p><h2 class="card-heading">Identity & transfers</h2></div><span class="setup-tag">PREVIEW</span></div><div class="readiness-item"><span class="readiness-icon">✓</span><div><strong>Identity verification</strong><p>Your identity provider will show verification status here.</p></div><span class="readiness-state">Connect</span></div><div class="readiness-item"><span class="readiness-icon">↗</span><div><strong>Travel Rule details</strong><p>Recipient details may be required for eligible transfers.</p></div><button class="text-button" type="button" data-action="withdraw">View flow <span>→</span></button></div></section>
+              <section class="surface-card settings-card preferences-card"><div class="settings-section-head"><div><p class="card-label">PREFERENCES</p><h2 class="card-heading">Your experience</h2></div></div><label class="preference-row"><span><strong>Product updates</strong><small>News about features and improvements.</small></span><input type="checkbox" checked></label><label class="preference-row"><span><strong>Account activity alerts</strong><small>Updates when activity happens on your account.</small></span><input type="checkbox" checked></label><div class="account-note preference-note"><span>i</span><p>Preferences shown here are for illustration. Notification settings will connect to your account when the service is available.</p></div></section>
+            </div>
+          </section>
+        </main>
+        <footer class="app-footer"><a href="index.html">← Back to Savant</a><span>Digital assets involve risk. Prices and balances here are illustrative.</span><span>© <span id="app-year">2026</span> Savant</span></footer>
+      </div>
+    </div>
+
+    <dialog class="transaction-dialog" id="transaction-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-shell">
+        <div class="dialog-header"><div><p class="dialog-kicker" id="dialog-kicker">YOUR EXCHANGE</p><h2 id="dialog-title">Deposit</h2></div><button class="dialog-close" type="button" aria-label="Close dialog">×</button></div>
+        <div class="dialog-progress"><span class="step-dot is-current"></span><i></i><span class="step-dot"></span><i></i><span class="step-dot"></span><span class="progress-label">DETAILS</span></div>
+        <div class="dialog-content" id="dialog-content"></div>
+      </div>
+    </dialog>
+    <div class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f3f2ef">
+    <link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/logo/favicon.ico" sizes="32x32">
+    <link rel="apple-touch-icon" href="images/logo/png/apple-touch-icon-180.png">
     <meta name="description" content="Explore the Savant customer exchange demo. Sample balances and transactions only.">
     <title>Exchange — Savant demo</title>
     <link rel="stylesheet" href="styles.css">
@@ -15,10 +18,10 @@
     <div class="app-layout">
       <aside class="app-sidebar" aria-label="Savant exchange">
         <a class="app-brand" href="index.html" aria-label="Savant home">
-          <svg viewBox="0 0 36 36" aria-hidden="true">
-            <path d="M18 2.5 33.5 11v14L18 33.5 2.5 25V11L18 2.5Z" fill="currentColor"/>
-            <path d="m18 9 8 4.5v9L18 27l-8-4.5v-9L18 9Z" fill="#f3f2ef"/>
-            <path d="m18 13.2 4.3 2.4v4.8L18 22.8l-4.3-2.4v-4.8l4.3-2.4Z" fill="currentColor"/>
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="14.4" fill="none" stroke="currentColor" stroke-width="2.1" opacity=".45"/>
+            <path d="M20.3 11.6A4.3 4.3 0 1 0 16 15.9a4.3 4.3 0 1 1-4.3 4.3" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+            <circle cx="26.3" cy="7.4" r="2.7" fill="#8fc149"/>
           </svg>
           <span>savant<span>.</span></span>
         </a>
@@ -58,11 +61,11 @@
         <header class="app-topbar">
           <div class="mobile-brand-row">
             <a class="app-brand" href="index.html" aria-label="Savant home">
-              <svg viewBox="0 0 36 36" aria-hidden="true">
-                <path d="M18 2.5 33.5 11v14L18 33.5 2.5 25V11L18 2.5Z" fill="currentColor"/>
-                <path d="m18 9 8 4.5v9L18 27l-8-4.5v-9L18 9Z" fill="#f3f2ef"/>
-                <path d="m18 13.2 4.3 2.4v4.8L18 22.8l-4.3-2.4v-4.8l4.3-2.4Z" fill="currentColor"/>
-              </svg>
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="14.4" fill="none" stroke="currentColor" stroke-width="2.1" opacity=".45"/>
+            <path d="M20.3 11.6A4.3 4.3 0 1 0 16 15.9a4.3 4.3 0 1 1-4.3 4.3" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+            <circle cx="26.3" cy="7.4" r="2.7" fill="#8fc149"/>
+          </svg>
               <span>savant<span>.</span></span>
             </a>
             <span class="sidebar-demo"><span></span> DEMO</span>
@@ -90,14 +93,14 @@
           <section class="app-view is-visible" id="view-overview" data-view-panel="overview" aria-labelledby="page-title">
             <div class="page-heading overview-heading">
               <div><p class="page-kicker">SATURDAY, 14 NOVEMBER 2026 <span class="heading-dot"></span> SAMPLE DATA</p><h1 id="page-title">Good afternoon, Jordan<span>.</span></h1><p class="page-subtitle">Here's your money at a glance.</p></div>
-              <button type="button" class="outline-button" data-action="deposit"><span>＋</span> Add funds</button>
+              <button type="button" class="outline-button" data-action="deposit"><span>+</span> Add funds</button>
             </div>
 
               <div class="quick-actions" aria-label="Quick actions">
                 <button type="button" data-action="deposit"><span class="quick-glyph quick-deposit">↓</span> Deposit</button>
                 <button type="button" data-action="transfer"><span class="quick-glyph quick-transfer">↗</span> Transfer</button>
                 <button type="button" data-action="withdraw"><span class="quick-glyph quick-withdraw">↑</span> Withdraw</button>
-                <button type="button" data-action="buy"><span class="quick-glyph quick-buy">＋</span> Buy</button>
+                <button type="button" data-action="buy"><span class="quick-glyph quick-buy">+</span> Buy</button>
                 <button type="button" data-action="sell"><span class="quick-glyph quick-sell">−</span> Sell</button>
                 <button type="button" data-action="swap"><span class="quick-glyph quick-swap">⇄</span> Swap</button>
               </div>
@@ -165,7 +168,7 @@
           </section>
 
           <section class="app-view" id="view-assets" data-view-panel="assets" aria-labelledby="assets-title" hidden>
-            <div class="page-heading"><div><p class="page-kicker">YOUR PORTFOLIO <span class="heading-dot"></span> SAMPLE DATA</p><h1 id="assets-title">My assets<span>.</span></h1><p class="page-subtitle">A clear view of everything you hold.</p></div><button type="button" class="outline-button" data-action="buy"><span>＋</span> Buy crypto</button></div>
+            <div class="page-heading"><div><p class="page-kicker">YOUR PORTFOLIO <span class="heading-dot"></span> SAMPLE DATA</p><h1 id="assets-title">My assets<span>.</span></h1><p class="page-subtitle">A clear view of everything you hold.</p></div><button type="button" class="outline-button" data-action="buy"><span>+</span> Buy crypto</button></div>
             <div class="assets-total-card surface-card"><div><p class="card-label">TOTAL ASSET VALUE</p><strong>$24,680.42</strong><span class="performance-pill">↗ 5.32% this month</span></div><div class="asset-total-actions"><button class="outline-button" type="button" data-action="deposit">Deposit</button><button class="outline-button" type="button" data-action="swap">Swap</button></div></div>
             <div class="section-title-row assets-title-row"><div><p class="card-label">CRYPTO & STABLECOINS</p><h2 class="content-heading">Your holdings</h2></div><label class="table-search"><span aria-hidden="true">⌕</span><span class="sr-only">Filter assets</span><input type="search" placeholder="Filter assets" data-filter-table="assets-table"></label></div>
             <div class="surface-card table-card"><div class="table-scroll"><table class="data-table" id="assets-table"><thead><tr><th>ASSET</th><th>PRICE</th><th>24H CHANGE</th><th>HOLDINGS</th><th>VALUE</th><th><span class="sr-only">Actions</span></th></tr></thead><tbody>
@@ -179,7 +182,7 @@
           </section>
 
           <section class="app-view" id="view-activity" data-view-panel="activity" aria-labelledby="activity-title" hidden>
-            <div class="page-heading"><div><p class="page-kicker">YOUR TRANSACTION HISTORY <span class="heading-dot"></span> SAMPLE DATA</p><h1 id="activity-title">Activity<span>.</span></h1><p class="page-subtitle">Every move, all in one place.</p></div><button type="button" class="outline-button" data-action="deposit"><span>＋</span> Add funds</button></div>
+            <div class="page-heading"><div><p class="page-kicker">YOUR TRANSACTION HISTORY <span class="heading-dot"></span> SAMPLE DATA</p><h1 id="activity-title">Activity<span>.</span></h1><p class="page-subtitle">Every move, all in one place.</p></div><button type="button" class="outline-button" data-action="deposit"><span>+</span> Add funds</button></div>
             <div class="activity-toolbar surface-card"><div class="activity-tabs" role="group" aria-label="Filter by transaction status"><button type="button" class="activity-tab is-selected" data-activity-filter="all" aria-pressed="true">All <span>8</span></button><button type="button" class="activity-tab" data-activity-filter="complete" aria-pressed="false">Completed <span>6</span></button><button type="button" class="activity-tab" data-activity-filter="pending" aria-pressed="false">Pending <span>2</span></button></div><div class="activity-filters"><label class="table-search"><span aria-hidden="true">⌕</span><span class="sr-only">Search activity</span><input id="activity-search" type="search" placeholder="Search activity"></label><label class="select-filter"><span class="sr-only">Filter activity type</span><select id="type-filter"><option value="all">All activity</option><option value="deposit">Deposits</option><option value="withdrawal">Withdrawals</option><option value="swap">Swaps</option><option value="buy">Buys</option><option value="sell">Sells</option><option value="transfer">Transfers</option></select></label></div></div>
             <div class="surface-card activity-table-card"><div class="table-scroll"><table class="data-table activity-table"><thead><tr><th>TRANSACTION</th><th>DATE</th><th>ACCOUNT</th><th>AMOUNT</th><th>STATUS</th><th><span class="sr-only">Details</span></th></tr></thead><tbody id="activity-rows"></tbody></table></div><div class="empty-state" id="activity-empty" hidden><span>⌕</span><strong>No activity found</strong><p>Try adjusting your filters or search terms.</p><button type="button" class="subtle-link" data-reset-activity>Clear filters</button></div><div class="table-footnote"><span>Showing sample transactions</span><span>Values shown for demonstration only</span></div></div>
           </section>
@@ -190,7 +193,7 @@
               <article class="account-card account-fiat surface-card"><div class="account-card-top"><span class="account-icon fiat-icon">$</span><span class="account-type">FIAT ACCOUNT</span><span class="more-button" aria-hidden="true">···</span></div><h2>US dollar account</h2><p class="account-number">USD ·· 2841 <button type="button" class="copy-value" data-copy="•••• 2841" aria-label="Copy account number">⧉</button></p><div class="account-balance-row"><span>Available balance</span><strong>$4,075.50</strong></div><div class="account-card-actions"><button class="outline-button" type="button" data-action="buy">Add funds</button><button class="text-button" type="button" data-action="sell">Withdraw USD <span>→</span></button></div></article>
               <article class="account-card account-crypto surface-card"><div class="account-card-top"><span class="account-icon crypto-icon">₿</span><span class="account-type">CRYPTO ACCOUNT</span><span class="more-button" aria-hidden="true">···</span></div><h2>Digital assets</h2><p class="account-number">Multi-asset account</p><div class="account-balance-row"><span>Available balance</span><strong>$20,604.92</strong></div><div class="account-card-actions"><button class="outline-button" type="button" data-action="deposit">Deposit crypto</button><button class="text-button" type="button" data-view="assets">View holdings <span>→</span></button></div></article>
             </div>
-            <div class="section-title-row address-title-row"><div><p class="card-label">ON-CHAIN DEPOSITS</p><h2 class="content-heading">Deposit addresses</h2></div><button type="button" class="outline-button" data-action="deposit">＋ New deposit</button></div>
+            <div class="section-title-row address-title-row"><div><p class="card-label">ON-CHAIN DEPOSITS</p><h2 class="content-heading">Deposit addresses</h2></div><button type="button" class="outline-button" data-action="deposit">+ New deposit</button></div>
             <div class="surface-card address-card"><div class="address-card-heading"><div><h3>Your saved addresses</h3><p>Always check the asset and network before sending funds.</p></div><span class="address-security"><span>✓</span> Address book</span></div>
               <div class="address-row"><span class="coin-icon coin-btc">₿</span><span class="address-asset"><strong>Bitcoin</strong><small>Bitcoin network</small></span><span class="address-value">sample-btc-address-not-for-deposits<span>Sample only · no funds received</span></span><button type="button" class="copy-address" data-copy="sample-btc-address-not-for-deposits">Copy <span>⧉</span></button></div>
               <div class="address-row"><span class="coin-icon coin-eth">◆</span><span class="address-asset"><strong>Ethereum</strong><small>Ethereum network</small></span><span class="address-value">sample-eth-address-not-for-deposits<span>Sample only · no funds received</span></span><button type="button" class="copy-address" data-copy="sample-eth-address-not-for-deposits">Copy <span>⧉</span></button></div>
